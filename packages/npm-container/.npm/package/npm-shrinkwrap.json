@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "bleacon": {
+      "version": "0.2.1",
+      "dependencies": {
+        "noble": {
+          "version": "0.3.10",
+          "dependencies": {
+            "xpc-connection": {
+              "version": "0.1.2",
+              "dependencies": {
+                "nan": {
+                  "version": "1.7.0"
+                }
+              }
+            }
+          }
+        },
+        "debug": {
+          "version": "0.7.4"
+        },
+        "bleno": {
+          "version": "0.1.11",
+          "dependencies": {
+            "xpc-connection": {
+              "version": "0.1.2",
+              "dependencies": {
+                "nan": {
+                  "version": "1.7.0"
+                }
+              }
+            }
+          }
+        },
+        "bignum": {
+          "version": "0.6.2"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+template(name="welcome")
+    +ionBody
+        +ionNavView
+            +ionView(class="special")
+                +ionContent
+                    +ionSlideBox
+                        +ionSlide
+                            +splash
+                        +ionSlide
+                            +modal
+                        +ionSlide
+                            h2 Seja Feliz
+                        +ionSlide
+                            h2 Mais feliz ainda!
+                    .bottom-section
+                      button.button.button-positive.button-block.btn-facebook FACEBOOK
+                      .row.buttons-row
+                        button.button.button-light.button-block.btn-signin(data-ion-modal="modalSignIn") SIGN IN
+                        .col
+                        button.button.button-light.button-block.btn-signup(data-ion-modal="modalSignUp") SIGN UP
+                      p Entrando você aceita nossos Termos e Políticas de Privacidade
+
+
+template(name="modalSignIn")
+    +ionModal(title="modalSignIn")
+        +accountsSignIn
+
+template(name="modalSignUp")
+    +ionModal(title="modalSignUp")
+        +accountsSignUp
+
+template(name="splash")
+    .splashpage
+        h1 LOCAL
+        p
+            | CARING OUR SPACES
+    //.row.buttons-row
+    //    button.button.button-light.button-block.btn-ver-promos Promos
+    //    .col
+    //    button.button.button-light.button-block.btn-ver-beacons(data-ion-modal="signInModal") Beacons

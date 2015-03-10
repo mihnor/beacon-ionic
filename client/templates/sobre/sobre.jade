@@ -1,0 +1,24 @@
+template(name="sobre")
+  +ionView
+    +ionContent
+        .page.welcome
+              +ionList(class="card")
+
+                +ionItem(class="item-text-wrap")
+                  | O Melamed é poeta que escreve poesias, aqui seguem 100 poesias de dupla de dois escritas com 2 pessoas cada uma em par de dupla em conjunto de metade de um quarteto!
+
+                +ionItem(iconRight="true" path="termos")
+                  | Termos de Uso
+                  +ionIcon(icon="ios-arrow-right")
+
+                +ionItem(iconRight="true" path="politicas")
+                  | Políticas de Privacidade
+                  +ionIcon(icon="ios-arrow-right")
+
+                a(href="http://wesense.com.br" target="_blank" style="text-decoration: none")
+                  +ionItem(iconRight="true")
+                    | Desenvolvido por <strong>WeSense</strong>
+                    +ionIcon(icon="ios-arrow-right")
+
+              if currentUser
+                button.button.button-block.button-light.logout Logout

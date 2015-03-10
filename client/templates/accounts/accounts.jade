@@ -1,0 +1,33 @@
+template(name="accounts")
+  +ionBody
+    +ionNavView
+      .bootstrap
+        +ionView
+          +ionContent
+            +yield
+    +appTabs
+
+template(name="accountsSignIn")
+  +atForm(state="signIn")
+
+template(name="accountsSignUp")
+  +atForm(state="signUp")
+
+template(name="accountsForgotPwd")
+  +atForm(state="forgotPwd")
+
+template(name="accountsChangePwd")
+  +atForm(state="changePwd")
+
+template(name="accountsResetPwd")
+  +atForm(state="resetPwd")
+
+template(name="accountsVerifyEmail")
+  +atForm(state="verifyEmail")
+
+template(name="accountsEnrollAccount")
+  +atForm(state="enrollAccount")
+
+template(name="_modal")
+  +ionModal(title="my modal")
+    h1 Teste

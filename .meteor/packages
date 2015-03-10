@@ -1,0 +1,27 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+iron:router
+accounts-password
+useraccounts:bootstrap
+meteoric:ionicons-sass
+meteoric:ionic-sass
+meteoric:ionic
+mquandalle:jade
+less
+fourseven:scss
+nemo64:bootstrap
+momentjs:moment
+matb33:collection-hooks
+dburles:collection-helpers
+meteorhacks:npm
+accounts-facebook
+accounts-ui
+service-configuration
+npm-container

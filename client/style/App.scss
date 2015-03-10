@@ -1,0 +1,64 @@
+$positive: #DE4F4F;
+$loading-font-size: 22px;
+
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Anton|Bangers|Oswald|Francois+One);
+
+.ionic-body.platform-android {
+  font-family: "Roboto", sans-serif;
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .tab-item {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.ionic-body {
+  font-family: "Oswald", sans-serif;
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Oswald", sans-serif;
+  }
+
+  .tab-item {
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ion-slide-box{
+  height: 70%;
+}
+
+.ion-slide {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+
+  &.dark-bg {
+    h3 {
+      color: #fff;
+    }
+  }
+}
+
+.popover {
+  height: auto;
+}
+
+.item-button-left, .item-button-right {
+  button {
+    top: 16px !important;
+  }
+}

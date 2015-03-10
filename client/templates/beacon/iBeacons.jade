@@ -1,0 +1,13 @@
+template(name="beacons")
+    +ionView
+        +ionContent
+            .page.welcome
+                +modal
+                with region
+                    div(class="beacon #{region.data.identifier}")
+                #{region.data.identifier}
+                .allRegions
+                    each allRegions
+                        .region #{data.identifier}
+                            if here
+                                | ✓

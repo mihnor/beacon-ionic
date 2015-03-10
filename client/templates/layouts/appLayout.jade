@@ -1,0 +1,17 @@
+template(name="appLayout")
+    +ionBody
+      +ionNavView
+      +yield
+      +appTabs
+
+template(name="appTabs")
+  if melamed
+    +ionTabs(style="iphone")
+        +ionTab(title="Beacons" path="beacons" iconOff="ios-paper-outline" iconOn="ios-paper" class="tab-item-positive")
+        +ionTab(title="Promos" path="promos" iconOff="ios-checkmark-outline" iconOn="ios-checkmark" class="tab-item-positive")
+        +ionTab(title="Sobre" path="sobre" iconOff="ios-information-outline" iconOn="ios-information" class="tab-item-positive")
+  else
+    +ionTabs(style="iphone" class="tabs-icon-top")
+        +ionTab(title="Beacons" path="beacons" iconOff="ios-paper-outline" iconOn="ios-paper" class="tab-item-dark")
+        +ionTab(title="Promos" path="promos" iconOff="ios-checkmark-outline" iconOn="ios-checkmark" class="tab-item-dark")
+        +ionTab(title="Sobre" path="sobre" iconOff="ios-information-outline" iconOn="ios-information" class="tab-item-dark")

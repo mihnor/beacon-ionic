@@ -1,0 +1,114 @@
+body {
+  font-size: 16px;
+  height: 100%;
+
+
+
+  .tab-item{
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+  padding: 8px;
+  border: 2px solid @text-color;
+  border-radius: 0px;
+  box-shadow: none;
+  margin: 1rem 0;
+
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.special{
+//      background: -webkit-linear-gradient(#312BAB , #C771D5); /* For Safari 5.1 to 6.0 */
+//      background: -o-linear-gradient(#312BAB , #C771D5); /* For Opera 11.1 to 12.0 */
+//      background: -moz-linear-gradient(#312BAB , #C771D5); /* For Firefox 3.6 to 15 */
+//      background: linear-gradient(#312BAB, #C771D5); /* Standard syntax (must be last) */
+//  background-color: #312BAB;
+  background-image: url(bgd.png);
+}
+
+
+.splashpage{
+  h1, h2{
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+}
+
+.page.welcome {
+
+  .top-section{
+    height:90%;
+  }
+
+
+.bottom-section{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  }
+
+  h1, h2, p, .button, .card {
+
+
+    color: @text-color;
+
+  }
+
+  p.heavy {
+    color: black;
+    font-weight: bold;
+
+  }
+
+  input {
+    border:2px solid @text-color ;
+    box-shadow: none;
+  }
+
+
+  h1 {
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  textarea{
+
+      resize: vertical;
+      box-shadow: none;
+  }
+
+//  .button{
+//    border: 1px solid @text-color;
+//  }
+
+  .buttons-row {
+//    margin-top: 10%;
+//    button:nth-child(2) {
+//    }
+
+    .button {
+      .transition( all 200ms ease-in );
+
+       &:hover { background-color: #EEE; }
+       &:active { box-shadow: rgba(0,0,0,.5) 0 1px 3px 0 inset; }
+     }
+  }
+}
